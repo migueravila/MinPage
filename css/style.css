@@ -1,7 +1,7 @@
 :root {
   --bg: #141414;
   --bg2: #282828;
-  --bg3: #585858;
+  --bg3: #838383;
   --fg: #eaeaea;
   --purple: #935fa7;
   --blue: #5eade0;
@@ -38,9 +38,9 @@ h1 {
 #time {
   text-align: center;
   color: var(--fg);
-  font-size: 56px;
-  font-weight: 800;
-  margin-bottom: 70px;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 #welcome {
@@ -156,10 +156,9 @@ h1 {
   border-left-style: none;
   border-bottom-style: none;
   background: var(--bg2);
-  font-size: 15px;
   line-height: 1.5;
   color: var(--bg3);
-  font-size: 20px;
+  font-size: 24px;
   min-width: 590px;
   width: 590px;
   padding: 12px;
