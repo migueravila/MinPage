@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="time"></div>
+    <div class="searchBox" id="searchBox">
+      <form action="https://duckduckgo.com/" method="get">
+        <input
+          class="inputBox"
+          id="searchInput"
+          type="text"
+          name="q"
+          placeholder="Search something..."
+          tabindex="2"
+        />
+      </form>
+    </div>
+    <script>
+      var today = new Date();
+      var curHr = today.getHours();
+      var name = "Henry";
+
+      if (curHr >= 0 && curHr < 6) {
+        document
+          .getElementById("searchInput")
+          .setAttribute("placeholder", "What are you doing so early Henry?");
+      } else if (curHr >= 6 && curHr < 12) {
+        document
+          .getElementById("searchInput")
+          .setAttribute("placeholder", "Good morning, Henry. Let's Work");
+      } else if (curHr >= 12 && curHr < 17) {
+        document
+          .getElementById("searchInput")
+          .setAttribute(
+            "placeholder",
+            "Good afternoon, great time to work Henry!"
+          );
+      } else {
+        document
+          .getElementById("searchInput")
+          .setAttribute("placeholder", "You should go to sleep early, Henry");
+      }
+    </script>
+    <section class="container-items">
+      <div class="sc-block block1-links">
+        <h1>Code</h1>
+        <ul>
+          <li>
+            <a class="mid" href="https://github.com/">Github</a>
+          </li>
+          <li>
+            <a class="mid" href="https://www.linkedin.com/feed/">LinkedIn</a>
+          </li>
+          <li>
+            <a class="mid" href="https://www.hackerrank.com/">Hackerrank</a>
+          </li>
+          <li>
+            <a class="mid" href="https://mail.google.com/mail/u/0/#inbox"
+              >Mail</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sc-block block2-links">
+        <h1>Social</h1>
+        <ul>
+          <li><a class="mid" href="https://www.reddit.com/">Reddit</a></li>
+          <li><a class="mid" href="https://www.youtube.com/">YouTube</a></li>
+          <li><a href="https://web.whatsapp.com/ " class="mid">WhatsApp</a></li>
+          <li>
+            <a href="https://www.pinterest.com/" class="mid">Pinterest</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sc-block block3-links">
+        <h1>Design</h1>
+        <ul>
+          <li>
+            <a href="https://dribbble.com/" class="mid">Dribble</a>
+          </li>
+		  <li><a class="mid" href="https://www.figma.com/">Figma</a></li>
+		  <li><a class="mid" href="https://wallhaven.cc/">Wallheaven</a></li>
+        </ul>
+      </div>
+      <div class="sc-block block4-links">
+        <h1>Utility</h1>
+        <ul>
+          <li><a class="mid" href="https://drive.google.com/drive/my-drive">Drive</a></li>
+          <li><a class="mid" href="https://mega.nz/fm/">Mega</a></li>
+          <li>
+            <a class="mid" href="https://photos.google.com/>Photos</a>
+          </li>
+          <li>
+            <a href="https://translate.google.com/" class="mid">Translate</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="js/time.js"></script>
+    <script src="js/date.js"></script>
+  </body>
+</html>
