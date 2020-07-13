@@ -20,8 +20,10 @@ function displayClock() {
   var min = mins = ('0'+d.getMinutes()).slice(-2);;
   var hh = d.getHours();
 
-  let time = mm + " " + dd + "  -  " + hh + ":" + min;
-
-  document.getElementById("time").innerText = time;
+  document.getElementById("month").innerText = mm + " ";
+  document.getElementById("day").innerText = dd + " - ";
+  document.getElementById("hour").innerText = hh;
+  document.getElementById("separator").innerHTML = " : ";
+  document.getElementById("minutes").innerText = min;
   setTimeout(displayClock, 1000);
 }
