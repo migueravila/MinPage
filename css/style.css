@@ -1,19 +1,16 @@
 :root {
+  --fsg: 250px;
+  --fsm: 50px;
+  --fwg: 700;
   --bg: #141414;
-  --bg2: #282828;
-  --bg3: #838383;
   --fg: #eaeaea;
-  --purple: #935fa7;
   --blue: #5eade0;
   --green: #3bbf7d;
   --yellow: #e0e055;
   --red: #e3593b;
-  --fsg: 250px;
-  --fsm: 50px;
-  --fwg: 700;
 }
 
-@media only screen and (max-width: 1200px) { 
+@media only screen and (max-width: 1200px) {
   :root {
     --fsg: 150px;
     --fsm: 30px;
@@ -24,7 +21,6 @@
     --fsg: 130px;
   }
 }
-
 
 * {
   margin: 0;
@@ -70,18 +66,25 @@ h1 {
   #separator2 {
     display: none;
   }
+
+  #month {
+    margin-right: 0;
+  }
 }
 
 #month {
   font-size: var(--fsg);
   color: var(--blue);
   font-weight: var(--fwg);
+  margin-right: 30px;
 }
+
 #day {
   font-size: var(--fsg);
   color: var(--green);
   font-weight: var(--fwg);
 }
+
 #separator1 {
   font-size: var(--fsg);
   background-image: linear-gradient(to right, var(--green), var(--yellow));
@@ -94,7 +97,6 @@ h1 {
 #hour {
   font-size: var(--fsg);
   color: var(--yellow);
-
   font-weight: var(--fwg);
 }
 
@@ -118,9 +120,39 @@ h1 {
   font-weight: var(--fwg);
   text-align: center;
 }
+
 @keyframes wave {
   0%,
   100% {
-    clip-path: polygon(0 13%, 14% 12%, 27% 19%, 35% 32%, 51% 34%, 60% 37%, 71% 26%, 83% 17%, 91% 12%, 100% 6%, 100% 99%, 1% 99%); }
+    clip-path: polygon(
+      0 13%,
+      14% 12%,
+      27% 19%,
+      35% 32%,
+      51% 34%,
+      60% 37%,
+      71% 26%,
+      83% 17%,
+      91% 12%,
+      100% 6%,
+      100% 99%,
+      1% 99%
+    );
+  }
   50% {
-    clip-path: polygon(0 28%, 12% 38%, 26% 38%, 38% 20%, 49% 10%, 59% 9%, 71% 13%, 79% 32%, 90% 38%, 100% 42%, 100% 99%, 1% 99%); } }
+    clip-path: polygon(
+      0 28%,
+      12% 38%,
+      26% 38%,
+      38% 20%,
+      49% 10%,
+      59% 9%,
+      71% 13%,
+      79% 32%,
+      90% 38%,
+      100% 42%,
+      100% 99%,
+      1% 99%
+    );
+  }
+}
