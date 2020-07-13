@@ -21,9 +21,10 @@ function displayClock() {
   var hh = d.getHours();
 
   document.getElementById("month").innerText = mm + " ";
-  document.getElementById("day").innerText = dd + " - ";
+  document.getElementById("day").innerText = dd;
+  document.getElementById("separator1").innerHTML = " - ";
   document.getElementById("hour").innerText = hh;
-  document.getElementById("separator").innerHTML = " : ";
+  document.getElementById("separator2").innerHTML = " : ";
   document.getElementById("minutes").innerText = min;
   setTimeout(displayClock, 1000);
 }

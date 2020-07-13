@@ -13,6 +13,19 @@
   --fwg: 700;
 }
 
+@media only screen and (max-width: 1200px) { 
+  :root {
+    --fsg: 150px;
+    --fsm: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    --fsg: 130px;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +36,8 @@
 }
 
 body {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
@@ -41,37 +54,59 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   animation: wave 5s ease-in-out infinite;
 }
 
-
+@media only screen and (max-width: 800px) {
+  .time {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: none;
+  }
+  #separator1 {
+    display: none;
+  }
+  #separator2 {
+    display: none;
+  }
+}
 
 #month {
   font-size: var(--fsg);
   color: var(--blue);
   font-weight: var(--fwg);
-  margin-right: 20px;
 }
 #day {
   font-size: var(--fsg);
   color: var(--green);
   font-weight: var(--fwg);
 }
+#separator1 {
+  font-size: var(--fsg);
+  background-image: linear-gradient(to right, var(--green), var(--yellow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--fwg);
+}
+
 #hour {
   font-size: var(--fsg);
   color: var(--yellow);
 
   font-weight: var(--fwg);
 }
-#separator {
+
+#separator2 {
   font-size: var(--fsg);
-  background-image: linear-gradient(to top, var(--red), var(--yellow));
+  background-image: linear-gradient(to top left, var(--red), var(--yellow));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-weight: var(--fwg);
 }
+
 #minutes {
   font-size: var(--fsg);
   color: var(--red);
