@@ -4,6 +4,7 @@
   --fwg: 700;
   --bg: #141414;
   --fg: #eaeaea;
+  --fgs: #1d1d1d;
   --blue: #5eade0;
   --green: #3bbf7d;
   --yellow: #e0e055;
@@ -87,10 +88,7 @@ h1 {
 
 #separator1 {
   font-size: var(--fsg);
-  background-image: linear-gradient(to right, var(--green), var(--yellow));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--fgs);
   font-weight: var(--fwg);
 }
 
@@ -102,10 +100,7 @@ h1 {
 
 #separator2 {
   font-size: var(--fsg);
-  background-image: linear-gradient(to top left, var(--red), var(--yellow));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--fgs);
   font-weight: var(--fwg);
 }
 
@@ -119,40 +114,4 @@ h1 {
   font-size: var(--fsm);
   font-weight: var(--fwg);
   text-align: center;
-}
-
-@keyframes wave {
-  0%,
-  100% {
-    clip-path: polygon(
-      0 13%,
-      14% 12%,
-      27% 19%,
-      35% 32%,
-      51% 34%,
-      60% 37%,
-      71% 26%,
-      83% 17%,
-      91% 12%,
-      100% 6%,
-      100% 99%,
-      1% 99%
-    );
-  }
-  50% {
-    clip-path: polygon(
-      0 28%,
-      12% 38%,
-      26% 38%,
-      38% 20%,
-      49% 10%,
-      59% 9%,
-      71% 13%,
-      79% 32%,
-      90% 38%,
-      100% 42%,
-      100% 99%,
-      1% 99%
-    );
-  }
 }
