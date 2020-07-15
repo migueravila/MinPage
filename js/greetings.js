@@ -1,7 +1,7 @@
 var today = new Date();
 var Hr = today.getHours();
 // You can change your name here
-var name = "Henry";
+var name = "Mike";
 var lateTxt = "Go to Sleep! ";
 var morningTxt = "Good day, great time for a coffee, ";
 var afterTxt = "Good afternoon, let's build something, ";
