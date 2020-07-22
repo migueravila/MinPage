@@ -5,7 +5,7 @@ var name = "Mike";
 var lateTxt = "Go to Sleep! ";
 var morningTxt = "Good day, great time for a coffee, ";
 var afterTxt = "Good afternoon, let's build something, ";
-var evenTxt = "Good Evening, why not a tea? ";
+var evenTxt = "Good Evening, ";
 
 if (Hr >= 0 && Hr < 6) {
   document.getElementById("greetings").innerText = lateTxt + name;
