@@ -1,5 +1,5 @@
 :root {
-  --fsg: 250px;
+  --fsg: 180px;
   --fsm: 50px;
   --fwg: 700;
   --bg: #1F2229;
@@ -48,6 +48,7 @@ h1 {
   text-align: center;
 }
 .time {
+  margin-top: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +57,7 @@ h1 {
 
 @media only screen and (max-width: 800px) {
   .time {
+    margin-top: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,4 +116,9 @@ h1 {
   font-size: var(--fsm);
   font-weight: var(--fwg);
   text-align: center;
+  margin-bottom: 5rem;
+}
+.footer {
+  margin-top: 5rem;
+  width: 65vw;
 }
