@@ -2,13 +2,13 @@
   --fsg: 250px;
   --fsm: 50px;
   --fwg: 700;
-  --bg: #141414;
+  --bg: #1F2229;
   --fg: #eaeaea;
-  --fgs: #1d1d1d;
-  --blue: #5eade0;
-  --green: #3bbf7d;
-  --yellow: #e0e055;
-  --red: #e3593b;
+  --fgs: #292E39;
+  --blue: #5e81ac;
+  --green: #a3be8c;
+  --yellow: #ebcb8b;
+  --red: #bf616a;
 }
 
 @media only screen and (max-width: 1200px) {
